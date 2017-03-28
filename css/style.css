@@ -47,5 +47,94 @@ html,body{
 	height: 100%;
 	background: url(../img/bg.jpg) 0 0 no-repeat;
 	background-size: 100% 100%;
+	position: relative;
+}
+
+.challenge{
+	width: 70%;
+	position: absolute;
+	left: 20%;
+	top: 10%;
+}
+
+.win{
+	width: 95%;
+	position: absolute;
+	top: 23%;
+}
+
+.start{
+	width: 34%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 60%;
+	margin: auto;
+}
+.hand{
+	width: 15%;
+	position: absolute;
+	left: 59%;
+	top: 70%;
+}
+
+.btn_wrap{
+	width:90%;
+	position: absolute;
+	left: 5%;
+	top: 86%;
+}
+
+.ranking{
+	width: 20%;
+	position: absolute;
+	left: 7%;
+	top: 87.2%;
+}
+
+.rule{
+	width: 20%;
+	position: absolute;
+	left: 29%;
+	top: 87.2%;
+}
+
+.prize{
+	width: 20%;
+	position: absolute;
+	left: 51%;
+	top: 87.2%;
+}
+
+.instruction{
+	width: 20%;
+	position: absolute;
+	left: 73%;
+	top: 87.2%;
+}
+
+
+/*----------填写资料----------*/
+
+.files_mask{
+	width: 100%;
+	height: 100%;
+	background: black;
+	opacity: 0.5;
+	position: absolute;
+	z-index: 1;
+}
+
+form{
+	width: 74%;
+	height: 44%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 20%;
+	margin:auto;
+	background: url(../img/p1_from.png) 0 0 no-repeat;
+	background-size:100% 100%;
+	z-index: 999;
 }
 
