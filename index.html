@@ -4,14 +4,36 @@
 	<meta charset="UTF-8">
 	<title>game</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 	<!-- 加载遮罩层 -->
-	<div class="load_wrap">
+	<div class="load_wrap" style="display: none;">
 		<!-- 百分比 -->
 		<div class="load"></div>
 	</div>
-	<div class="wrap"></div>
+	<div class="wrap">
+		<!-- 开始游戏 -->
+		<div class="begin">
+			<div class="index">
+				<img src="img/tiaozhan.png" alt="">
+				<img src="img/yinqu.png" alt="">
+				<img src="img/start_game.png" alt="">
+				<img src="img/hand.png" alt="">
+				<img src="img/p1_btns_wrap.png" alt="">
+				<img src="img/ranking.png" alt="">
+				<img src="img/activity_rule.png" alt="">
+				<img src="img/prize.png" alt="">
+				<img src="img/instruction.png" alt="">
+			</div>
+			<form style="display: none;">
+				<input type="text" placeholder="姓名">
+				<input type="text" placeholder="电话">
+				<input type="button" name="" value="提交并开始游戏">
+			</form>
+		</div>
+	</div>
 </body>
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 </html>
