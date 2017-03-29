@@ -80,12 +80,37 @@ ul li{
 	right: 0;
 	top: 60%;
 	margin: auto;
+	animation: startAni 0.5s infinite alternate;
 }
+
+
+@keyframes startAni{
+	from{
+		-webkit-transform:scale(1);
+	}
+	to{
+		-webkit-transform:scale(1.1);
+	}
+}
+
+
+
 .hand{
 	width: 15%;
 	position: absolute;
 	left: 59%;
 	top: 70%;
+	animation: handAni 1s infinite alternate;
+}
+
+
+@keyframes handAni{
+	from{
+		opacity:0;
+	}
+	to{
+		opacity: 1;
+	}
 }
 
 .btn_wrap{
