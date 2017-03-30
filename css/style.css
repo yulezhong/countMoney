@@ -65,28 +65,10 @@ ul li{
 	position: absolute;
 	left: 20%;
 	top: 12%;
-	animation: challengeAni 0.5s 0.5s;
+	animation-delay: 0.8s;
 }
 
-@keyframes challengeAni{
-	0%{
-		
-		-webkit-transform:scale(0);
-	}
-	25%{
-		-webkit-transform:scale(0.5);
-	}
-	50%{
-		-webkit-transform:scale(1);
-	}
-	75%{
-		-webkit-transform:scale(1.5);
-	}
-	100%{
-		display: block;
-		-webkit-transform:scale(1);
-	}
-}
+
 
 
 .win{
