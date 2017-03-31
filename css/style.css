@@ -426,4 +426,190 @@ form{
 }
 
 
+/*----------进入游戏----------*/
+
+.play{
+	width: 100%;
+	height: 100%;
+	background: url(../img/bg2.png) 0 0 no-repeat;
+	background-size:100% 100%;
+	overflow: hidden;
+	position: relative;
+	display: none;
+}
+
+.title{
+	width: 84%;
+	height: 19%;
+	line-height: 18%;	
+	background: url(../img/p2_message_box.png) 0 0 no-repeat;
+	background-size: 100% 100%;
+	margin:23% auto 0;
+	position: relative;
+}
+
+.title img{
+	width: 83%;
+	height: 60%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 10%;
+	margin:auto;
+}
+
+.time_score{
+	text-align: center;
+	margin:10px 0;
+}
+
+.time_score span{
+	display: inline-block;
+	line-height: 60px;
+	margin: 0 0.5%;
+	color: #fff;
+	font-size: 20px;
+}
+
+.score{
+	width: 11%;
+	height: 60px;
+	background: url(../img/p2_scoring.png) 0 0 no-repeat;
+	background-size: 100% 100%;
+
+}
+
+.time_score span:last-child{
+	width: 60px;
+	height: 60px;
+	background: url(../img/clock.png);
+	background-size:100% 100%;
+}
+
+.money{
+	width: 60%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -165px;
+	margin:auto;
+}
+
+.money img{
+	width: 100%;
+}
+
+.brick{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin:auto;
+	width: 100%;
+}
+
+.move_hand{
+	width: 35%;
+	position: absolute;
+	right: 2%;
+	bottom: 22%;
+	margin: auto;
+	animation:moveHandAni 1s infinite;
+}
+
+
+@keyframes moveHandAni{
+	from{
+		bottom: 22%;
+		opacity: 1;
+	}
+	to{
+		bottom: 35%;
+		opacity: 0;
+	}
+}
+
+
+/*----------再来一次----------*/
+
+.again{
+	width: 100%;
+	height: 100%;
+	background:url(../img/p3_bg.jpg) 0 0 no-repeat;
+	background-size:100% 100%;
+	position: relative;
+}
+
+.congratulation{
+	width: 69.68%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 13.38%;
+	margin: auto;
+}
+
+.again_pic{
+	width: 27.8%;
+	position: absolute;
+	left: 15.9%;
+	bottom: 27.11%;	
+}
+
+.share{
+	width: 27.8%;
+	position: absolute;
+	right: 15.9%;
+	bottom: 27.11%;
+}
+
+#result_num{
+	width: 100%;
+	text-align: center;
+	font-size: 50px;
+	color: #fff;
+	position: absolute;
+	top: 23%;
+}
+
+#result_txt{
+	width: 100%;
+	position: absolute;
+	top: 35%;
+	font-size: 14px;
+	color: #fff;
+	text-align: center;
+}
+
+#gains{
+	width: 80%;
+	text-align: center;
+	color: #d21026;
+	font-size: 14px;
+	background:#fff;
+	position: absolute;
+	top: 40%;
+	left: 0;
+	right: 0;
+	margin:auto;
+	padding: 3% 0;
+	border-radius: 10px;
+}
+
+.toFriends{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.5);
+	display: none;
+}
+
+.toFriends img{
+	position: absolute;
+	right: 5%;
+	top: 5%;
+	width: 50%;
+}
+
+
+
 

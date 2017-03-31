@@ -28,7 +28,7 @@
 				<img src="img/instruction.png" alt="" class="instruction">
 			</div>
 			<div class="files_mask" style="display: none;">
-				<img src="img/close.png">
+				<img src="img/close.png" class="close">
 				<form>
 					<input type="text" placeholder="姓名">
 					<input type="text" placeholder="电话">
@@ -36,7 +36,7 @@
 				</form>
 			</div>
 			<div class="leaderboard" style="display: none;">
-				<img src="img/close.png">
+				<img src="img/close.png" class="close">
 				<div>
 					<ul>
 						<li>
@@ -79,7 +79,7 @@
 				</div>
 			</div>
 			<div class="activity_rule" style="display: none;">
-				<img src="img/close.png">
+				<img src="img/close.png" class="close">
 				<div>
 					<h2>活动规则</h2>
 					<p>
@@ -95,7 +95,7 @@
 				</div>
 			</div>
 			<div class="reward" style="display: none;">
-				<img src="img/close.png">
+				<img src="img/close.png" class="close">
 				<div>
 					<h2>活动奖品</h2>
 					<p>
@@ -112,8 +112,8 @@
 					</p>
 				</div>
 			</div>
-			<div class="use_instruction" style="display: none;">
-				<img src="img/close.png">
+			<div class="use_instruction" style ="display: none;">
+				<img src="img/close.png" class="close">
 				<div>
 					<h2>奖券使用说明</h2>
 					<p>
@@ -131,9 +131,45 @@
 			</div>
 		</div>
 		<!-- 进入游戏 -->
-		<div class="play">
-			
+		<div class="play" style="display: none;">
+			<div class="title">
+				<img src="img/p2_txt1.png">
+			</div>
+			<div class="time_score">
+				<span class="score">0</span>
+				<span class="score">0</span>
+				<span class="score">0</span>
+				<span id="time">60</span>
+			</div>
+			<div class="money">
+				<img src="img/money.jpg">	
+			</div>
+			<img src="img/brick.png" class="brick">
+			<img src="img/move_hand.png" class="move_hand">
 		</div>
+		<!-- 再来一次 -->
+		<div class="again" style="display: none;">
+			<div class="result">
+				<img src="img/p3_acquire.png" class="congratulation">
+				<div id="result_num">￥</div>
+				<div id="result_txt">你太客气了,还不是你的挑战极限吧</div>
+				<div id="gains">
+					<span>我的辉煌战绩:￥</span>
+					<span>当前排名：位</span>
+				</div>
+				<img src="img/p3_again.png" class="again_pic">
+				<img src="img/p3_share_btn.png" class="share">
+				<img src="img/p1_btns_wrap.png" alt="" class="btn_wrap">
+				<img src="img/ranking.png" alt="" class="ranking">
+				<img src="img/activity_rule.png" alt="" class="rule">
+				<img src="img/prize.png" alt="" class="prize">
+				<img src="img/instruction.png" alt="" class="instruction">
+			</div>
+			<div class="toFriends">
+				<img src="img/p3_share.png">
+			</div>
+		</div>
+
 	</div>
 </body>
 <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
