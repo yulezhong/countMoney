@@ -435,7 +435,7 @@ form{
 	background-size:100% 100%;
 	overflow: hidden;
 	position: relative;
-	display: none;
+	/*display: none;*/
 }
 
 .title{
@@ -488,6 +488,7 @@ form{
 
 .money{
 	width: 60%;
+	height: 71%;
 	position: absolute;
 	left: 0;
 	right: 0;
@@ -496,7 +497,27 @@ form{
 }
 
 .money img{
+	position: absolute;
 	width: 100%;
+}
+
+.ani{
+	animation:moneyAni 1s forwards;
+}
+
+@keyframes moneyAni{
+	from{
+		transform: scale(1);
+		top:0;
+		/*opacity: 1;*/
+	}
+	
+	to{
+		transform:scale(0.1);
+		top:-120%;
+		/*opacity: 0.3;*/
+	}
+
 }
 
 .brick{

@@ -20,7 +20,8 @@ $btn.click(function(){
 		alert("请填写联系电话");
 		return false;
 	}
-	$(".play:hidden").show().siblings().hide();	
+	$(".play:hidden").show().siblings().hide();
+	// timeCountFn();	
 })
 
 addclickFn();
@@ -71,17 +72,71 @@ var timer = setInterval(function(){
 
 
 // 游戏时间
-var time = 20;
-var timeSpan = document.querySelector("#time");
-var gameTimer = setInterval(function(){
-	timeSpan.innerText = time;
-	time--;
-	if(time <= 0){
-		clearInterval(gameTimer);
-		$(".again:hidden").show().siblings().hide();
-		addclickFn();
-	}
-},1000);
+var time = 60;
+function timeCountFn(){
+	var timeSpan = document.querySelector("#time");
+	var gameTimer = setInterval(function(){
+		timeSpan.innerText = time;
+		time--;
+		if(time <= 0){
+			clearInterval(gameTimer);
+			$(".again:hidden").show().siblings().hide();
+			
+		}
+	},1000);
+}
+
+// 数钱
+
+
+var $money = $(".money img");
+
+$money.on("touchstart",function(e){
+	e.preventDefault();
+	var touches = e.touches[0];
+	var startY = touches.clientY;
+	$money.on("touchend",function(e){
+		e.preventDefault();
+		var touches = e.changedTouches[0];
+		var endY = touches.clientY;
+		var diff = startY - endY;
+		if(diff > 10){
+			console.log(diff)
+			// var $img = $("<img>",{
+			// 	src:"img/money.jpg"
+			// });
+
+			// $money.append($img);
+			// $img.animate({
+			// 	"width":"20%",
+			// 	"height":"20%",
+			// 	"top":"-120%"
+			// },1000)
+		}
+	})
+	
+})
+
+
+
+
+touch.on($money,"swipeup",function(){
+	// timeCountFn();
+	var $img = $("<img>",{
+		src:"img/money.jpg"
+	});
+
+	$money.append($img);
+	$img.animate({
+		"width":"20%",
+		"height":"20%",
+		"top":"-120%"
+	},1000,function(){
+		$(this).remove();
+	})
+})
+
+
 
 
 // 分享朋友
